@@ -295,6 +295,10 @@ img{
     margin-left: 12px;
 }
 
+.bg-grey{
+    background: #EFEFEF;
+}
+
 body .cursor {
     pointer-events: none;
 }
@@ -1872,6 +1876,56 @@ header .menu .info-wrap a{
 }
 
 
+/* Work */
+.work{
+    padding: 90px 0;
+}
+
+.work .inner{
+    display: flex;
+}
+
+.work .inner .left{
+    width: 33.33%;
+    padding-right: 50px;
+}
+
+.work .inner .left .wrap{
+    position: sticky;
+    top: 15px;
+}
+
+.work .inner .left h2{
+    margin-bottom: 20px;
+}
+
+.work .inner .left p{
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 325px;
+}
+
+.work .inner .right{
+    width: 66.66%;
+}
+
+.work .inner .right .project{
+    margin-bottom: 50px;
+}
+
+.work .inner .right .project img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.work .inner .right .project h3{
+    text-transform: initial;
+    margin-bottom: 7px;
+}
+
+.work .inner .right .project:last-child{
+    margin-bottom: 0;
+}
 /* Footer */
 
 footer .inner{
