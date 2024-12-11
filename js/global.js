@@ -132,7 +132,8 @@ $(document).ready(function($) {
     // });
 
     AOS.init();
-
+    AOS.refresh();
+    
     new WOW().init();
 
     $('.click-to-scroll').on('click', function () {
