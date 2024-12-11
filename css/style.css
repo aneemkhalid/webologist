@@ -1788,6 +1788,8 @@ header .menu .info-wrap a{
 .tab-menu ul{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 
 .tab-menu ul li a{
@@ -1892,7 +1894,13 @@ header .menu .info-wrap a{
 .our-story.future{
     padding: 100px 0;
 }
-
+.our-story.future span{
+    width: 5px;
+    height: 5px;
+    background: #010326;
+    display: inline-block;
+    margin: 0 5px 10px 5px;
+}
 .our-story .head{
     margin: 0 auto 70px;
     max-width: 620px;
@@ -2376,7 +2384,8 @@ header .menu .info-wrap a{
 }
 
 .work-main img{
-    width: 1000%;
+    width: 100%;
+    display: block;
 }
 
 /* Pricing */
@@ -2430,6 +2439,7 @@ header .menu .info-wrap a{
     font-size: 16px;
     text-transform: uppercase;
     color: #010326;
+    display: block;
 }
 
 .pricing-category .info h5{

@@ -182,7 +182,7 @@
                     </div>
 
                     <div class="reviews">
-                        <div class="swiper mySwiper">
+                        <div class="swiper mySwiper" data-aos="zoom-in" data-aos-duration="1500">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                 <div class="card">
@@ -453,11 +453,13 @@
         var swiper = new Swiper(".mySwiper", {
         effect: 'cards',
         grabCursor: true,
-        ltr: true,
-        initialSlide: 5,
+        // ltr: true,
+        // initialSlide: 5,
         speed: 800,
-        loop: true,
+        initialSlide: 5,
+        // loop: true,
         mousewheel: true,
+        arrows: true,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
