@@ -204,19 +204,19 @@
             <div class="container">
                 <div class="inner">
                     <div class="box">
-                        <h3 data-aos="fade-up" data-aos-duration="1500"><b data-countto="24" data-duration="2000">0</b>+</h3>
+                        <h3 data-aos="fade-up" data-aos-duration="1500">24+</h3>
 
                         <p data-aos="fade-up" data-aos-duration="1500">Months of collab</p>
                     </div>
 
                     <div class="box">
-                        <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><b data-countto="24" data-duration="2000">0</b>+</h3>
+                        <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">24+</h3>
 
                         <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">User flows</p>
                     </div>
 
                     <div class="box">
-                        <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><b data-countto="1" data-duration="2000">0</b></h3>
+                        <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">1</h3>
 
                         <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Full app redesign</p>
                     </div>
@@ -386,43 +386,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/global.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-        effect: 'cards',
-        grabCursor: true,
-        ltr: true,
-        initialSlide: 5,
-        speed: 800,
-        loop: true,
-        mousewheel: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-
-    $(".work-info .inner .box h3 b").each(function () {
-  var $this = $(this),
-    countTo = $this.attr("data-countto");
-  countDuration = parseInt($this.attr("data-duration"));
-  $({ counter: $this.text() }).animate(
-    {
-      counter: countTo
-    },
-    {
-      duration: countDuration,
-      easing: "linear",
-      step: function () {
-        $this.text(Math.floor(this.counter));
-      },
-      complete: function () {
-        $this.text(this.counter);
-      }
-    }
-  );
-});
-    </script>
 </body>
 
 </html>
