@@ -476,6 +476,7 @@ header .menu{
     height: 100vh;
     background: #035AA6;
     display: none;
+    z-index: 2;
 }
 
 header .menu .container{
