@@ -34,28 +34,42 @@ $(document).ready(function($) {
       });
 });
 
-animateDiv('.banner .img-wrap img');
-
 function makeNewPosition() {
   // Get the dimensions of the parent wrapper
   var wrapper = $('.banner .img-wrap');
-  var wrapperHeight = wrapper.height();  // Height of wrapper (100vh)
-  var wrapperWidth = wrapper.width();    // Width of wrapper (640px)
+  var wrapperHeight = wrapper.height();
+  var wrapperWidth = wrapper.width();
 
-  // Get the dimensions of the div.a
-  var divHeight = $('.banner .img-wrap img').height();      // 50px (height of div.banner .img-wrap img)
-  var divWidth = $('.banner .img-wrap img').width();        // 50px (width of div.a)
+  // Get the dimensions of the image
+  var divHeight = $('.banner .img-wrap img').outerHeight(true); // true includes margins
+  var divWidth = $('.banner .img-wrap img').outerWidth(true);
 
-  // Calculate the maximum position value within the wrapper's dimensions
-  var nh = Math.floor(Math.random() * (wrapperHeight - divHeight));  // Random top position (ensures within height of wrapper)
-  var nw = Math.floor(Math.random() * (wrapperWidth - divWidth));    // Random left position (ensures within width of wrapper)
+  // Calculate a new random position
+  var nh = Math.floor(Math.random() * (wrapperHeight - divHeight));
+  var nw = Math.floor(Math.random() * (wrapperWidth - divWidth));
 
-  return [nh, nw];    
+  return [nh, nw];
 }
 
 function animateDiv(myclass) {
-  var newq = makeNewPosition();  // Get a random position inside the wrapper
-  $(myclass).animate({ top: newq[0], left: newq[1] }, 4000, function() {
-      animateDiv(myclass);  // Repeat the animation
+  // Set initial random position first
+  var startPosition = makeNewPosition();
+  $(myclass).css({
+    top: startPosition[0],
+    left: startPosition[1],
+    position: 'absolute'
   });
+
+  function move() {
+    var newq = makeNewPosition();
+    $(myclass).animate({ top: newq[0], left: newq[1] }, 4000, function() {
+      move();
+    });
+  }
+
+  move();
 }
+
+$(document).ready(function() {
+  animateDiv('.banner .img-wrap img');
+});
