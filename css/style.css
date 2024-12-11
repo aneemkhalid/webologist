@@ -621,6 +621,7 @@ header .menu .info-wrap a{
     text-align: center;
     position: relative;
     height: 85vh;
+    margin-top: -70px;
 }
 
 .banner .inner .img-wrap img{
@@ -642,7 +643,7 @@ header .menu .info-wrap a{
   50%{
     opacity: 1;
   }
-  
+
   100%{
     transform: scale(1);
   }
