@@ -388,7 +388,6 @@ header{
     position: absolute;
     top: 10px;
     width: 100%;
-    z-index: 4;
 }
 
 header > .container > .inner{
@@ -399,6 +398,11 @@ header > .container > .inner{
 
 header .logo img{
     display: block;
+}
+
+header .logo{
+    position: relative;
+    z-index: 2;
 }
 
 header .hamburger-menu{
