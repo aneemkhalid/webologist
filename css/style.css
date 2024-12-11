@@ -627,22 +627,17 @@ header .menu .info-wrap a{
     text-align: center;
     position: absolute;
     transform-style: preserve-3d;
-    animation: showimg 2s ease-in-out;
+    animation: showimg 1s ease-in-out;
     max-height: 100%;
 }
 
 @keyframes showimg {
   0% {
-      transform: scale(0.7);
       opacity: 0;
   }
 
-  50%{
+  100%{
     opacity: 1;
-  }
-
-  100% {
-      transform: scale(1);
   }
 }
 
