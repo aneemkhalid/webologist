@@ -236,7 +236,6 @@ a {
 body {
     font-family: 'Kanit';
     overflow-x: hidden;
-    scroll-behavior: smooth;
     min-height: 110vh;
   }
 
@@ -621,8 +620,7 @@ header .menu .info-wrap a{
     width: calc(100% - 640px);
     text-align: center;
     position: relative;
-    height: 90vh;
-    margin-top: -100px;
+    height: 85vh;
 }
 
 .banner .inner .img-wrap img{
@@ -630,6 +628,7 @@ header .menu .info-wrap a{
     position: absolute;
     transform-style: preserve-3d;
     animation: showimg 2s ease-in-out;
+    max-height: 100%;
 }
 
 @keyframes showimg {
