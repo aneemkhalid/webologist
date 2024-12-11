@@ -1,5 +1,5 @@
 $(document).ready(function($) {
-    animateDiv('.banner .img-wrap img');
+    ;
 
 
     $( ".accordion li" ).each(function( index ) {
@@ -88,29 +88,7 @@ $(document).ready(function($) {
     });
 });    
 
-function makeNewPosition() {
-    // Get the dimensions of the parent wrapper
-    var wrapper = $('.banner .img-wrap');
-    var wrapperHeight = wrapper.height();  // Height of wrapper (100vh)
-    var wrapperWidth = wrapper.width();    // Width of wrapper (640px)
 
-    // Get the dimensions of the div.a
-    var divHeight = $('.banner .img-wrap img').height();      // 50px (height of div.banner .img-wrap img)
-    var divWidth = $('.banner .img-wrap img').width();        // 50px (width of div.a)
-
-    // Calculate the maximum position value within the wrapper's dimensions
-    var nh = Math.floor(Math.random() * (wrapperHeight - divHeight));  // Random top position (ensures within height of wrapper)
-    var nw = Math.floor(Math.random() * (wrapperWidth - divWidth));    // Random left position (ensures within width of wrapper)
-
-    return [nh, nw];    
-}
-
-function animateDiv(myclass) {
-    var newq = makeNewPosition();  // Get a random position inside the wrapper
-    $(myclass).animate({ top: newq[0], left: newq[1] }, 4000, function() {
-        animateDiv(myclass);  // Repeat the animation
-    });
-}
 
 const $bigBall = document.querySelector('.cursor__ball--big');
 const $smallBall = document.querySelector('.cursor__ball--small');
