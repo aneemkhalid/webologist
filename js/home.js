@@ -52,12 +52,14 @@ function makeNewPosition() {
 }
 
 function animateDiv(myclass) {
-  // Set initial random position first
-  var startPosition = makeNewPosition();
+  // Set the initial position to start at 30% top and 20% left
+  var wrapper = $('.banner .img-wrap');
+  var initialTop = wrapper.height() * 0.08; // 10% of the wrapper's height
+  var initialLeft = wrapper.width() * 0.2; // 20% of the wrapper's width
+
   $(myclass).css({
-    top: startPosition[0],
-    left: startPosition[1],
-    position: 'absolute'
+    top: initialTop,
+    left: initialLeft,
   });
 
   function move() {
@@ -71,5 +73,7 @@ function animateDiv(myclass) {
 }
 
 $(document).ready(function() {
-  animateDiv('.banner .img-wrap img');
+  setTimeout(function() {
+    animateDiv('.banner .img-wrap img');
+  }, 2000);
 });
