@@ -372,6 +372,17 @@ body .cursor {
     fill: #000
   }
 
+  .loader-page{
+    background: #035AA6;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
 /* Header */
 header{
     padding: 20px 0;
@@ -1196,7 +1207,7 @@ header .menu .info-wrap a{
     left: 0;
     top: 0;
     background: #010326;
-    opacity: 0.2;
+    opacity: 0.6;
     z-index: 1;
   }
   
@@ -2014,7 +2025,7 @@ header .menu .info-wrap a{
     left: 0;
     top: 0;
     background: #010326;
-    opacity: 0.2;
+    opacity: 0.6;
     z-index: 1;
   }
   
