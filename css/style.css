@@ -277,8 +277,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size: 144px;
-    line-height: 0.76;
+    font-size: 81px;
+    line-height: 0.85;
 }
 
 h2{
@@ -828,12 +828,12 @@ header .menu .info-wrap a{
 .banner h1 span:last-child{
     color: #fff;
     font-size: 30px;
-    width: 103px;
+    width: 93px;
     display: inline-block;
-    line-height: 100px;
+    line-height: 67px;
     vertical-align: top;
     background: #035AA6;
-    border-radius: 39px;
+    border-radius: 27px;
     position: relative;
     bottom: 5px;
     margin-left: -11px;
