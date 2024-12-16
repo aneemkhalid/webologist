@@ -378,18 +378,90 @@ body .cursor {
     z-index: 10;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    animation: showloader 2s ease-in-out;
+    transform: scale(0);
+  }
+
+  @keyframes showloader {
+    0% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+
+    100%{
+      transform: scale(0);
+    }
+  }
+
+  .loader-page img{
+    position: fixed;
+    width: 400px;
+    top: calc(50% - 44px);
+    left: calc(50% - 200px);
+  }
+
+  .scroll-up{
+    background: #035AA6;
+    box-shadow: 0px 0px 12px rgba(255,255,255,0.2);
+    border-radius: 4px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    transition: all ease-in-out 0.3s;
   }
+
+  .scroll-up:hover{
+    background: #010326;
+  }
+
+  .scroll-up i{
+    color: #fff;
+    font-size: 18px;
+  }
+
+  
 /* Header */
 header{
-    padding: 20px 0;
-    position: absolute;
-    top: 10px;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
 }
+
+header.fixed{
+    position: fixed;
+    top: 0;
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+/* header.fixed .logo{
+    opacity: 0;
+}
+
+header.fixed .logo.white{
+    opacity: 1;
+} */
+
+html.menu-open header.fixed .menu .menu-logo{
+    top: 20px;
+}
+
 
 header > .container > .inner{
     display: flex;
@@ -404,6 +476,12 @@ header .logo img{
 header .logo{
     position: relative;
     z-index: 2;
+    transition: all ease-in-out 0.3s;
+}
+header .logo.white{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
 }
 
 header .hamburger-menu{
@@ -460,6 +538,9 @@ header .hamburger-menu span{
     position: relative;
 }
 
+header.fixed .hamburger-menu span{
+    background: #010326;
+}
 header .hamburger-menu span:first-child{
     width: 30px;
 }
@@ -930,6 +1011,7 @@ header .menu .info-wrap a{
 
 .services .inner{
     display: flex;
+    position: relative;
 }
 
 .services .left{
@@ -939,7 +1021,7 @@ header .menu .info-wrap a{
 
 .services .left .wrap{
     position: sticky;
-    top: 15px;
+    top: 115px;
 }
 
 .services h2{
@@ -1595,7 +1677,7 @@ header .menu .info-wrap a{
 
   .faqs .inner .left .wrap{
     position: sticky;
-    top: 15px;
+    top: 115px;
    }
 
    .faqs .inner .left p{
@@ -1846,13 +1928,13 @@ header .menu .info-wrap a{
     border-bottom: 8px solid #035AA6;
 }
 
-.tab-box{
-    display: none;
-}
 
 .tab-main-box{
-    background: #F8F8F8;
     margin-top: -4px;
+}
+
+.tab-box:nth-child(odd){
+    background: #F8F8F8;
 }
 
 .tab-content{
@@ -3345,6 +3427,9 @@ article{
     position: relative;
     padding-bottom: 56.25%;
 } */
+.contact-info .map{
+    background: #035AA6;
+}
 
 .contact-info .map iframe{
     /* position: absolute;
@@ -3354,6 +3439,8 @@ article{
     height: 100%; */
     width: 100%;
     height: 710px;
+    mix-blend-mode: luminosity;
+    display: block;
 }
 
 .contact-info .inner{
