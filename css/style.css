@@ -2201,7 +2201,6 @@ header .menu .info-wrap a{
     background-size: 17px 1px;
     background-repeat: repeat-x;
     display: flex;
-    align-items: center;
   }
 
   .values-driven.bg-grey .values .value{

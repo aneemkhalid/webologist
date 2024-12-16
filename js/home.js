@@ -27,7 +27,7 @@
 $(document).ready(function($) {
 
     var typing=new Typed(".text", {
-      strings: ["developm<b>ent</b>" , "developm<b>ent</b>"],
+      strings: ["Engage" , "Engage"],
       typeSpeed: 100,
       backSpeed: 40,
       loop: true,
