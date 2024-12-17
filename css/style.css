@@ -279,6 +279,8 @@ h1, h2, h3, h4, h5, h6{
 h1{
     font-size: 81px;
     line-height: 0.85;
+    /* font-size: 144px;
+    line-height: 0.78; */
 }
 
 h2{
@@ -1346,7 +1348,7 @@ header .menu .info-wrap a{
   }
 
   .leading-agency .head{
-    max-width: 520px;
+    /* max-width: 520px; */
     margin-bottom: 65px;
   }
 
@@ -1472,7 +1474,8 @@ header .menu .info-wrap a{
     }
 
     .testimonials .left{
-        width: 420px;
+        /* width: 420px; */
+        width: 770px;
     }
 
     .testimonials .reviews{
@@ -1638,7 +1641,7 @@ header .menu .info-wrap a{
 
   .brands h2{
     text-align: center;
-    max-width: 735px;
+    max-width: 865px;
     margin: 0 auto 105px;
   }
 
@@ -1741,6 +1744,14 @@ header .menu .info-wrap a{
     display: none;
 }
 
+.accordion-body p{
+    margin-bottom: 15px;
+}
+
+.accordion-body p:last-child{
+    margin-bottom: 0;
+}
+
 
 /* Pioneers */
 
@@ -1827,7 +1838,7 @@ header .menu .info-wrap a{
 
 .lets-talk .inner h2{
     font-size: 211px;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
     line-height: 0.83;
 }
