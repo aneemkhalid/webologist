@@ -277,10 +277,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size: 81px;
-    line-height: 0.85;
-    /* font-size: 144px;
-    line-height: 0.78; */
+    /* font-size: 81px;
+    line-height: 0.85; */
+    font-size: 144px;
+    line-height: 0.78;
 }
 
 h2{
@@ -408,7 +408,7 @@ body .cursor {
   }
 
   .scroll-up{
-    background: #035AA6;
+    background: #010326;
     box-shadow: 0px 0px 12px rgba(255,255,255,0.2);
     border-radius: 4px;
     height: 40px;
@@ -425,7 +425,7 @@ body .cursor {
   }
 
   .scroll-up:hover{
-    background: #010326;
+    background: #035AA6;
   }
 
   .scroll-up i{
@@ -472,7 +472,7 @@ header > .container > .inner{
 }
 
 header .logo img{
-    display: block;
+    transition: all ease-in-out 0.3s;
 }
 
 header .logo{
@@ -480,11 +480,16 @@ header .logo{
     z-index: 2;
     transition: all ease-in-out 0.3s;
 }
-header .logo.white{
+
+/* header.fixed .logo{
+    width: 250px;
+} */
+
+/* header .logo.white{
     position: absolute;
     opacity: 0;
     transition: all ease-in-out 0.3s;
-}
+} */
 
 header .hamburger-menu{
     height: 18px;
@@ -827,20 +832,21 @@ header .menu .info-wrap a{
     display: none !important;
 }
 
-.banner h1 span:last-child{
+.banner span:last-child{
     color: #fff;
     font-size: 30px;
-    width: 93px;
+    width: 103px;
     display: inline-block;
-    line-height: 67px;
+    line-height: 100px;
     vertical-align: top;
     background: #035AA6;
-    border-radius: 27px;
+    border-radius: 39px;
     position: relative;
     bottom: 5px;
     margin-left: -11px;
     padding-left: 11px;
 }
+
 .banner h1 span:last-child b{
     font-weight: normal;
     color: #010326;
@@ -1348,7 +1354,7 @@ header .menu .info-wrap a{
   }
 
   .leading-agency .head{
-    /* max-width: 520px; */
+    max-width: 520px;
     margin-bottom: 65px;
   }
 
@@ -1474,8 +1480,9 @@ header .menu .info-wrap a{
     }
 
     .testimonials .left{
-        /* width: 420px; */
-        width: 770px;
+        width: 500px;
+        /* width: 770px; */
+        padding-right: 80px;
     }
 
     .testimonials .reviews{
@@ -1717,6 +1724,10 @@ header .menu .info-wrap a{
     justify-content: space-between;
    }
 
+   .accordion-head h3{
+    width: calc(100% - 49px);
+   }
+
    .accordion-head .icon{
     width: 49px;
     height: 49px;
@@ -1838,7 +1849,7 @@ header .menu .info-wrap a{
 
 .lets-talk .inner h2{
     font-size: 211px;
-    /* max-width: 1000px; */
+    max-width: 1000px;
     margin: 0 auto;
     line-height: 0.83;
 }
@@ -3692,4 +3703,84 @@ footer a:hover{
 
 footer a:hover i{
     color: #035AA6 !important;
+}
+
+
+@media screen and (max-width:1600px){
+    /* .container{
+        max-width: 1320px;
+    } */
+
+    .banner .inner .img-wrap img{
+        width: 60%;
+    }
+
+    .banner{
+        padding: 130px 0 70px;
+    }
+
+    h2{
+        font-size: 60px;
+    }
+
+    .company-stats h2{
+        font-size: 140px;
+    }
+
+    .company-stats {
+        padding: 122px 0 100px;
+    } 
+
+    .banner:after {
+        left: -251px;
+        bottom: -251px;
+        width: 502px;
+        height: 502px;
+        border: 97px solid #FAFAFC;
+    }
+
+    .leading-agency .content:before{
+        left:100px;
+    }
+
+    .leading-agency .content:after{
+        left: 100px;
+    }
+
+    .brands h2{
+        max-width: 765px;
+    }
+
+    h1{
+        font-size: 110px;
+        line-height: 0.83;
+    }
+
+    .banner h1{
+        width: 500px;
+    }
+
+    .banner h1 span:first-child{
+        font-size: 39px;
+        width: 110px;
+    }
+
+    .banner span:last-child {
+        font-size: 30px;
+        width: 103px;
+        line-height: 76px;
+        border-radius: 29px;
+        bottom: 0px;
+    }
+
+    .lets-talk .inner h2 {
+        font-size: 160px;
+        margin: 0 auto;
+        line-height: 0.83;
+        max-width: 700px;
+    }
+
+    .lets-talk .inner {
+        padding: 108px 0 80px;
+    }
 }
