@@ -602,9 +602,9 @@ header .menu .links{
 }
 
 header .menu .links ul{
-    max-width: 61%;
+    width: 61%;
     margin-left: auto;
-    width: 100%;
+    max-width: 800px;
 }
 
 header .menu .links li a{
@@ -1029,7 +1029,7 @@ header .menu .info-wrap a{
 
 .services .left .wrap{
     position: sticky;
-    top: 115px;
+    top: 120px;
 }
 
 .services h2{
@@ -1775,8 +1775,7 @@ header .menu .info-wrap a{
 }
 
 .pioneers h2{
-    max-width: 800px;
-    margin: 0 auto 4cqh;
+    margin-bottom: 40px;
     color: #fff;
 }
 
@@ -1963,16 +1962,16 @@ header .menu .info-wrap a{
     position: relative;
 }
 
-.tab-content .content{
-    width: 500px;
-    padding: 120px 0;
-    position: absolute;
-    top: 0;
-    height: 100%;
+.tab-content .container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.tab-content .content{
+    width: 50%;
+    padding: 180px 0;
+    padding-right: 80px;
+    height: 100%;
 }
 
 .tab-content h2{
@@ -2022,10 +2021,14 @@ header .menu .info-wrap a{
     object-fit: contain;
 }
 
-.tab-content > img{
-    width: 52%;
+.tab-content .container > img{
+    max-width: 52%;
     margin-left: auto;
     display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
 }
 
 .our-story{
@@ -3634,7 +3637,7 @@ footer .logo{
 }
 
 footer .info{
-    width: 40%;
+    width: 34%;
 }
 
 footer .info p{
@@ -3654,8 +3657,16 @@ footer h3{
     font-weight: 500;
 }
 
+footer .menu:nth-child(2){
+    width: 26%;
+}
+
 footer .menu{
     width: 20%;
+}
+
+footer .menu ul li a{
+    line-height: 1.3;
 }
 
 footer .menu h3{
@@ -3663,7 +3674,7 @@ footer .menu h3{
 }
 
 footer .inner ul li{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 footer .copyright{
@@ -3707,9 +3718,9 @@ footer a:hover i{
 
 
 @media screen and (max-width:1600px){
-    /* .container{
+    .container{
         max-width: 1320px;
-    } */
+    }
 
     .banner .inner .img-wrap img{
         width: 60%;
@@ -3736,7 +3747,7 @@ footer a:hover i{
         bottom: -251px;
         width: 502px;
         height: 502px;
-        border: 97px solid #FAFAFC;
+        border: 107px solid #FAFAFC;
     }
 
     .leading-agency .content:before{
@@ -3748,7 +3759,7 @@ footer a:hover i{
     }
 
     .brands h2{
-        max-width: 765px;
+        max-width: 665px;
     }
 
     h1{
@@ -3757,7 +3768,7 @@ footer a:hover i{
     }
 
     .banner h1{
-        width: 500px;
+        max-width: 500px;
     }
 
     .banner h1 span:first-child{
@@ -3782,5 +3793,55 @@ footer a:hover i{
 
     .lets-talk .inner {
         padding: 108px 0 80px;
+    }
+
+    .services h2 {
+        max-width: 400px;
+    }
+
+    .brilliance h2 {
+        text-align: center;
+        max-width: 650px;
+    }
+
+    .leading-agency .head {
+        max-width: 420px;
+    }
+
+    .skills .left h2 {
+        max-width: 380px;
+    }
+
+    .pioneers h2{
+        max-width: 500px;
+    }
+
+    header .menu .links li a{
+        font-size: 35px;
+        padding: 15px;
+    }
+
+    header .menu:before {
+        left: -251px;
+        bottom: -251px;
+        width: 502px;
+        height: 502px;
+        border: 107px solid #FAFAFC;
+    }
+
+    header .menu .links ul{
+        width: 71%;
+        max-width: 1000px;
+        margin-top: 50px;
+    }
+
+    .inner-page .banner h1{
+        font-size: 80px;
+        max-width: 900px;
+    }
+
+    .tab-content .content{
+        padding: 120px 0;
+        padding-right: 50px;
     }
 }

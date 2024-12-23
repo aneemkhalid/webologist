@@ -12,7 +12,7 @@ $(document).ready(function($) {
           // Scroll to the target section
           $('html, body').animate(
             {
-              scrollTop: targetSection.offset().top + 3, // Adjust the offset (optional)
+              scrollTop: targetSection.offset().top + -103, // Adjust the offset (optional)
             },
             {
               duration: 800,
