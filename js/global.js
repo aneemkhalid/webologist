@@ -318,7 +318,10 @@ $(document).ready(function($) {
     //     });
     // });
 
-    AOS.init();
+    AOS.init({
+      offset: 100, // default is 200px
+    });
+    
     AOS.refresh();
 
     new WOW().init();

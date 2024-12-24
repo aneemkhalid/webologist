@@ -485,11 +485,21 @@ header .logo{
     width: 250px;
 } */
 
-/* header .logo.white{
+header .logo.white{
     position: absolute;
     opacity: 0;
     transition: all ease-in-out 0.3s;
-} */
+}
+
+.careers header.fixed .logo{
+    opacity: 0;
+}
+
+.careers header.fixed .logo.white{
+    opacity: 1;
+}
+
+
 
 header .hamburger-menu{
     height: 18px;
@@ -832,7 +842,7 @@ header .menu .info-wrap a{
     display: none !important;
 }
 
-.banner span:last-child{
+.banner h1 span:last-child{
     color: #fff;
     font-size: 30px;
     width: 103px;
@@ -3776,7 +3786,7 @@ footer a:hover i{
         width: 110px;
     }
 
-    .banner span:last-child {
+    .banner h1 span:last-child {
         font-size: 30px;
         width: 103px;
         line-height: 76px;
@@ -3843,5 +3853,35 @@ footer a:hover i{
     .tab-content .content{
         padding: 120px 0;
         padding-right: 50px;
+    }
+
+    .why-webologist .card h3 {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    .why-webologist .card img {
+        margin-bottom: 20px;
+    }
+
+    .why-webologist .card {
+        padding: 35px 22px;
+    }
+
+    .careers .banner h1{
+        max-width: 100%;
+        font-size: 80px;
+    }
+
+    .careers .banner{
+        padding: 180px 0 0;
+    }
+
+    .features .inner .info p{
+        padding: 7px 30px;
+    }
+
+    .inner-page .banner >.right-img{
+        max-width: 33%;
     }
 }
