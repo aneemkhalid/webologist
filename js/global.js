@@ -334,7 +334,7 @@ $(document).ready(function($) {
         // Scroll to the next section
         $('html, body').animate(
           {
-            scrollTop: nextSection.offset().top + 1,
+            scrollTop: nextSection.offset().top - 100,
           },
           {
             duration: 800,

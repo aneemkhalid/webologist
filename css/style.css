@@ -1035,6 +1035,7 @@ header .menu .info-wrap a{
 .services .left{
     width: calc(100% - 720px);
     padding-bottom: 30px;
+    padding-right: 50px;
 }
 
 .services .left .wrap{
@@ -1237,6 +1238,7 @@ header .menu .info-wrap a{
 
   .brilliance{
     padding: 100px 0;
+    overflow: hidden;
   }
 
   .brilliance h2{
@@ -1481,6 +1483,7 @@ header .menu .info-wrap a{
 
     .testimonials{
         padding: 100px 0;
+        overflow: hidden;
     }
 
     .testimonials .inner{
@@ -1646,7 +1649,7 @@ header .menu .info-wrap a{
     }
 
     .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
   /* Brands */
@@ -1795,6 +1798,7 @@ header .menu .info-wrap a{
 
 .pioneers .left{
     width: 595px;
+    padding-right: 50px;
 }
 
 .pioneers .left p{
@@ -1870,6 +1874,10 @@ header .menu .info-wrap a{
 
  .projects .owl-carousel{
     margin-bottom: 22px;
+ }
+
+ .projects .owl-carousel.owl-rtl{
+    margin-bottom: 0;
  }
 
  .projects .item{
@@ -2078,6 +2086,7 @@ header .menu .info-wrap a{
 
 .our-story .left{
     width: 46%;
+    padding-right: 50px;
 }
 
 .our-story .content{
@@ -2195,6 +2204,7 @@ header .menu .info-wrap a{
 /* Values Driven */
 .values-driven{
     padding: 90px 0;
+    overflow: hidden;
 }
 
 .values-driven h2{
@@ -2256,7 +2266,7 @@ header .menu .info-wrap a{
 
   .values-driven.bg-grey p{
     font-size: 18px;
-    width: 390px;
+    max-width: 390px;
   }
 
   .values .value:nth-child(even){
@@ -2311,7 +2321,7 @@ header .menu .info-wrap a{
 
 .work .inner .left .wrap{
     position: sticky;
-    top: 15px;
+    top: 120px;
 }
 
 .work .inner .left h2{
@@ -2393,6 +2403,10 @@ header .menu .info-wrap a{
 }
 
 /* Goal */
+.goal{
+    overflow: hidden;
+}
+
 .goal .inner{
     display: flex;
     padding: 100px 80px 100px 40px;
@@ -3403,6 +3417,7 @@ article{
 
 .job-application-form .file-wrap .input-wrap{
     width: 199px;
+    min-width: 199px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3596,6 +3611,8 @@ article{
     background-position: calc(100% - 15px) 50%;
     background-repeat: no-repeat;
     padding-right: 35px;
+    -webkit-appearance: none; 
+    appearance: none;
 }
 
 .contact-form form textarea{
@@ -3673,6 +3690,7 @@ footer .menu:nth-child(2){
 
 footer .menu{
     width: 20%;
+    padding-right: 20px;
 }
 
 footer .menu ul li a{
@@ -3738,6 +3756,10 @@ footer a:hover i{
 
     .banner{
         padding: 130px 0 70px;
+    }
+
+    .careers .banner .wrap{
+        max-width: 600px;
     }
 
     h2{
@@ -3883,5 +3905,495 @@ footer a:hover i{
 
     .inner-page .banner >.right-img{
         max-width: 33%;
+    }
+
+    .testimonials .inner{
+        padding-right: 70px;
+    }
+
+    .pricing-category .info p{
+        min-height: 63px;
+    }
+}
+
+@media screen and (max-width:1400px){
+
+    .container{
+        max-width: 1160px;
+    }
+
+    header .logo img{
+        width: 300px;
+    }
+
+    header .menu .menu-logo img{
+        width: 300px;
+    }
+
+    h1{
+        font-size: 100px;
+    }
+
+    .banner h1 span:first-child{
+        line-height: 0.75;
+    }
+
+    .banner:after {
+        left: -201px;
+        bottom: -201px;
+        width: 402px;
+        height: 402px;
+        border: 87px solid #FAFAFC;
+    }
+
+    header .menu:before{
+        left: -201px;
+        bottom: -201px;
+        width: 402px;
+        height: 402px;
+        border: 87px solid #FAFAFC;
+    }
+
+    .banner h1 span:last-child {
+        line-height: 71px;
+        bottom: 2px;
+    }
+
+    .leading-agency .content:before,
+    .leading-agency .content:after{
+        display: none;
+    }
+
+    .leading-agency{
+        padding: 95px 0;
+    }
+
+    .brilliance{
+        padding: 90px 0;
+    }
+
+    .brilliance h2{
+        margin: 0 auto 80px;
+    }
+
+    .faqs .inner .right{
+        width: 700px;
+    }
+
+    .faqs .inner{
+        justify-content: space-between;
+    }
+
+    .pioneers .logo-wrap{
+        gap: 40px;
+    }
+
+    .lets-talk .inner h2{
+        font-size: 150px;
+    }
+
+    .services .right{
+        width: 660px;
+    }
+
+    .services .inner{
+        justify-content: space-between;
+    }
+
+    footer .logo img{
+        width: 300px;
+    }
+
+    .values-driven .value .info{
+        padding-left: 40px;
+    }
+
+    .values-driven h2{
+        margin-bottom: 40px;
+    }
+
+    .tab-content .content{
+        padding: 80px 0;
+    }
+
+    .tab-content .content{
+        width: 47%;
+    }
+
+    .values-driven .value .info{
+        padding-left: 40px;
+    }
+
+    .blog-content .inner{
+        max-width: 850px;
+    }
+
+    .blog-content .social-sidebar{
+        width: 90px;
+    }
+
+    .blog-content .social-sidebar ul{
+        padding: 20px 15px 1px;
+    }
+
+    .blog-detail-form .inner{
+        max-width: 850px;
+    }
+
+    .goal .inner{
+        padding: 80px 80px 80px 40px;
+    }
+
+    .inner-page .banner.with-image .inner .content{
+        width: 710px;
+    }
+
+    .faqs .inner .left {
+        width: calc(100% - 750px);
+    }
+}
+
+@media screen and (max-width:1199px){
+    .banner .inner .content{
+        width: 540px;
+        padding-right: 30px;
+    }
+
+    .banner .inner .img-wrap{
+        width: calc(100% - 540px);
+    }
+
+    h1{
+        font-size: 85px;
+    }
+
+    h2{
+        font-size: 55px;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 19px;
+    }
+
+    .banner h1{
+        max-width: 440px;
+        line-height: 0.9;
+    }
+
+    .banner h1 span:first-child:after{
+        bottom: -6px;
+    }
+
+    .banner h1 span:first-child {
+        font-size: 36px;
+        width: 101px;
+    }
+
+    .banner:after {
+        left: -151px;
+        bottom: -151px;
+        width: 302px;
+        height: 302px;
+        border: 57px solid #FAFAFC;
+    }
+
+    header .menu:before {
+        left: -151px;
+        bottom: -151px;
+        width: 302px;
+        height: 302px;
+        border: 57px solid #FAFAFC;
+    }
+
+    header .menu .info-wrap{
+        padding: 0 30px;
+    }
+
+    header .menu .links li a {
+        font-size: 30px;
+        padding: 13px 15px;
+    }
+
+    header .logo img{
+        width: 280px;
+    }
+
+    header .menu .menu-logo img{
+        width: 280px;
+    }
+
+    .banner .wrap{
+        margin-left: 70px;
+    }
+
+    .banner .wrap p{
+        font-size: 19px;
+    }
+
+    .banner .inner .img-wrap{
+        height: 80vh;
+        margin-top: -50px;
+    }
+
+    .banner h1 span:first-child{
+        bottom: 9px;
+    }
+
+    .banner h1 span:last-child {
+        line-height: 65px;
+        border-radius: 24px;
+    }
+
+    .services .right{
+        width: 580px;
+    }
+
+    .services .left {
+        width: calc(100% - 620px);
+    }
+
+    .company-stats h2{
+        font-size: 110px;
+    }
+
+    .leading-agency .img-wrap{
+        width: 40%;
+    }
+
+    .leading-agency .content{
+        width: 60%;
+        padding-left: 50px;
+    }
+
+    .leading-agency .head{
+        max-width: 380px;margin-bottom: 35px;
+    }
+
+    .leading-agency .inner p{
+        margin-bottom: 45px;
+    }
+
+    .skills .head{
+        margin-bottom: 70px;
+    }
+
+    .swiper-slide .card .content {
+        padding: 45px 44px;
+    }
+
+    .swiper-slide .card .content .head {
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide .card .content p {
+        padding-bottom: 45px;
+    }
+
+    .swiper-slide .card .bottom {
+        padding: 22px 45px;
+    }
+
+    .testimonials .reviews{
+        width: 370px;
+    }
+
+    .reviews .swiper-3d .swiper-wrapper{
+        height: 480px;
+    }
+
+    .testimonials{
+        padding: 90px 0;
+    }
+
+    .brands {
+        padding: 90px 0;
+    }
+
+    .brands h2 {
+        max-width: 600px;
+        margin: 0 auto 70px;
+    }
+
+    .faqs .inner .right{
+        width: 600px;
+    }
+
+    .faqs .inner .left {
+        width: calc(100% - 650px);
+    }
+
+    .pioneers{
+        padding: 90px 0;
+    }
+
+    .pioneers .left{
+        width: 55%;
+    }
+
+    .pioneers .right{
+        width: 45%;
+    }
+
+    .pioneers .logo-wrap a{
+        width: 120px;
+        height: 110px;
+    }
+
+    .pioneers h2{
+        max-width: 390px;
+    }
+
+    .pioneers .right p{
+        margin-bottom: 50px;
+    }
+
+    .lets-talk .inner h2{
+        font-size: 135px;
+    }
+
+    footer .logo img{
+        width: 280px;
+    }
+
+    footer .inner {
+        padding: 85px 0;
+    }
+
+    .inner-page .banner .inner .content{
+        width: 100%;
+    }
+
+    .inner-page .banner h1{
+        font-size: 70px;
+        max-width: 850px;
+        margin-bottom: 50px;
+    }
+
+    .inner-page .banner .wrap{
+        max-width: 570px;
+    }
+
+    .why-webologist .card {
+        padding: 30px 20px;
+    }
+
+    .why-webologist .card img {
+        margin-bottom: 15px;
+    }
+
+    .why-webologist .card h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .why-webologist .card p {
+        font-size: 16px;
+    }
+
+    .why-webologist {
+        padding: 90px 0;
+    }
+
+    .why-webologist h2 {
+        margin-bottom: 50px;
+    }
+
+    .values-driven .value h3 {
+        font-size: 35px;
+    }
+
+    header .menu .info-wrap{
+        width: 35%;
+    }
+
+    header .menu .links{
+        width: 65%;
+    }
+
+    header .menu .links ul{
+        width: 76%;
+    }
+
+    .pricing h2{
+        max-width: 750px;
+    }
+
+    .pricing-category .info{
+        padding: 40px 20px 88px;
+    }
+
+    .features .inner .info p {
+        padding: 7px 15px;
+        min-height: 102px;
+    }
+
+    .lets-talk .inner {
+        padding: 88px 0 70px;
+    }
+
+    footer a{
+        font-size: 17px;
+    }
+
+    footer .info p{
+        font-size: 17px;
+    }
+
+    footer .inner {
+        padding: 80px 0 65px;
+    }
+
+    .apply .apply-info{
+        width: 370px;
+    }
+    
+    .apply .upper-info{
+        padding: 25px;
+    }
+
+    .apply .content {
+        width: calc(100% - 370px);
+        padding-top: 80px;
+        padding-right: 45px;
+    }
+
+    .apply {
+        padding-bottom: 40px;
+    }
+
+    .perks {
+        padding: 80px 0;
+    }
+
+    .job-application-form form .form-group label{
+        width: 510px;
+    }
+
+    .job-application-form form .form-group input{
+        width: calc(100% - 510px);
+    }
+
+    .job-application-form .file-wrap{
+        width: calc(100% - 510px);
+    }
+
+    .blog-content .inner{
+        max-width: 750px;
+    }
+
+    .blog-detail-form .inner{
+        max-width: 750px;
+    }
+
+    .inner-page .banner.with-image .inner .content{
+        width: 650px;
+    }
+
+    .goal .inner{
+        padding: 70px 40px;
     }
 }
