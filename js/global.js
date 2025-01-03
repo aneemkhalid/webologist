@@ -289,8 +289,25 @@ $(document).ready(function($) {
         slideTransition: 'linear',
         autoplayTimeout: 0,
         autoplaySpeed: 5000,
-        dots: false
-
+        dots: false,
+        responsive : {
+          // breakpoint from 0 up
+          0 : {
+            items: 1,
+          },
+          // breakpoint from 575 up
+          575 : {
+            items: 2,
+          },
+          // breakpoint from 768 up
+          768 : {
+            items: 3,
+          },
+          // breakpoint from 1024 up
+          1024 : {
+            items: 4,
+          }
+        }
     });
 
     var owl = $('.gallery2');
@@ -303,7 +320,25 @@ $(document).ready(function($) {
         slideTransition: 'linear',
         autoplayTimeout: 0,
         autoplaySpeed: 5000,
-        dots: false
+        dots: false,
+        responsive : {
+          // breakpoint from 0 up
+          0 : {
+            items: 1,
+          },
+          // breakpoint from 575 up
+          575 : {
+            items: 2,
+          },
+          // breakpoint from 768 up
+          768 : {
+            items: 3,
+          },
+          // breakpoint from 1024 up
+          1024 : {
+            items: 4,
+          }
+        }
     });
 
     // $('.owl-carousel').each(function() {
