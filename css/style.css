@@ -376,36 +376,83 @@ body .cursor {
   }
 
   .loader-page{
-    background: #035AA6;
+    background: #010326;
     position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    animation: showloader 2s ease-in-out;
-    transform: scale(0);
+    overflow: hidden;
+    animation: showloader 0.7s ease-in-out forwards; /* Added 'forwards' to keep opacity at 0 after animation */
+    animation-delay: 1.8s;
   }
 
-  @keyframes showloader {
-    0% {
-        transform: scale(1);
-    }
+  .loader-page .inner{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 400px;
+    height: 204px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
 
-    80% {
-        transform: scale(1);
+  .loader-page .loader-logo-wrap{
+    position: fixed;
+    overflow: hidden;
+    animation: showlogo 1.3s ease-in-out;
+  }
+
+  .loader-page .loader-logo-wrap img{
+    width: 400px;
+    max-width: initial;
+  }
+
+  .loader-page .inner > img{
+    width: 150px;
+    position: relative;
+    z-index: 2;
+    animation: moveastronaut 1.3s ease-in-out;
+    margin-left: 390px;
+  }
+
+  @keyframes showlogo {
+    0% {
+        width: 0;
     }
 
     100%{
-      transform: scale(0);
+      width: 400px;
     }
-  }
+  } 
 
-  .loader-page img{
-    position: fixed;
-    width: 400px;
-    top: calc(50% - 44px);
-    left: calc(50% - 200px);
+  @keyframes showloader {
+    0% {
+        opacity: 1;
+    }
+
+    100%{
+      opacity: 0;
+      display: none;
+    }
+  } 
+
+  @keyframes moveastronaut {
+    0% {
+        margin-left: -30px;
+    }
+
+    100%{
+      margin-left: 390px;
+    }
+  } 
+
+  .loader-page .loader-logo-wrap img{
+    
   }
 
   .scroll-up{
@@ -686,7 +733,7 @@ header .menu .info-wrap a{
 .banner{
     display: flex;
     align-items: center;
-    padding: 181px 0 70px;
+    padding: 160px 0 70px;
     position: relative;
     background: #EFEFEF;
     overflow: hidden;
@@ -739,10 +786,10 @@ header .menu .info-wrap a{
     margin-top: -70px;
 }
 
-.banner .inner .img-wrap img{
+.banner .inner .img-wrap img {
     text-align: center;
     transform-style: preserve-3d;
-    animation: showimg 2s ease-in-out;
+    animation: showimg 1.5s ease-in-out 1.8s forwards; 
     max-height: 100%;
     position: absolute;
     top: 8%;
@@ -755,11 +802,11 @@ header .menu .info-wrap a{
       transform: scale(0.7);
   }
 
-  50%{
+  50% {
     opacity: 1;
   }
 
-  100%{
+  100% {
     transform: scale(1);
   }
 }

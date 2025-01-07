@@ -353,13 +353,17 @@ $(document).ready(function($) {
     //     });
     // });
 
-    AOS.init({
-      offset: 100, // default is 200px
-    });
+    setTimeout(function() {
+      // Hide the loader
+      AOS.init({
+        offset: 100, // default is 200px
+      });
+      
+      AOS.refresh();
+  
+      new WOW().init();
+    }, 2400); 
     
-    AOS.refresh();
-
-    new WOW().init();
 
     $('.click-to-scroll').on('click', function () {
       const currentSection = $('.banner');
