@@ -273,8 +273,8 @@ $(document).ready(function($) {
         });
     });
 
-    $('header .hamburger-menu').on("click", function(){
-      $('header .menu').fadeToggle();
+    $('header .hamburger-menu').on("click", function() {
+      $('header .menu').toggleClass('visible');  // Toggle visibility class instead of fading
       $(this).toggleClass('active');
       $('html').toggleClass('menu-open');
     });
