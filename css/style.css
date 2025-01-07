@@ -239,18 +239,19 @@ body {
     min-height: 110vh;
   }
 
-  html.menu-open{
-    background: #074F8D;
+  html.menu-open header{
+    padding-right: 17px;
+    transition: none !important;
   }
 
   html.menu-open body{
     overflow: hidden;
-    margin-right: 17px;
+    padding-right: 17px;
   }
 
-  html.menu-open .viewport{
+  /* html.menu-open .viewport{
     position: static;
-  }
+  } 
 
   .viewport {
     overflow: hidden;
@@ -268,7 +269,7 @@ body {
     z-index: 10;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-  }
+  }*/
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Teko';
@@ -587,6 +588,10 @@ header .menu .menu-logo{
     top: 30px;
 }
 
+.menu-open header .menu .menu-logo{
+    margin-left: -8px;
+}
+
 header .menu:before{
     position: absolute;
     content: '';
@@ -603,6 +608,7 @@ header .menu:before{
 header .menu .inner{
     display: flex;
     height: 100%;
+    /* overflow-y: scroll; */
 }
 
 header .menu .links{
