@@ -362,7 +362,7 @@ $(document).ready(function($) {
       AOS.refresh();
   
       new WOW().init();
-    }, 2300); 
+    }, 6300); 
     
 
     $('.click-to-scroll').on('click', function () {

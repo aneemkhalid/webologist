@@ -385,50 +385,8 @@ body .cursor {
     height: 100%;
     overflow: hidden;
     animation: showloader 0.7s ease-in-out forwards; /* Added 'forwards' to keep opacity at 0 after animation */
-    animation-delay: 1.8s;
+    animation-delay: 5.7s;
   }
-
-  .loader-page .inner{
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
-    width: 400px;
-    height: 204px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-  }
-
-  .loader-page .loader-logo-wrap{
-    position: fixed;
-    overflow: hidden;
-    animation: showlogo 1.3s ease-in-out;
-  }
-
-  .loader-page .loader-logo-wrap img{
-    width: 400px;
-    max-width: initial;
-  }
-
-  .loader-page .inner > img{
-    width: 150px;
-    position: relative;
-    z-index: 2;
-    animation: moveastronaut 1.3s ease-in-out;
-    margin-left: 390px;
-  }
-
-  @keyframes showlogo {
-    0% {
-        width: 0;
-    }
-
-    100%{
-      width: 400px;
-    }
-  } 
 
   @keyframes showloader {
     0% {
@@ -441,6 +399,68 @@ body .cursor {
     }
   } 
 
+  .loader{
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    width: 64px;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: loadergif 3s ease-in-out forwards;
+  }
+
+  @keyframes loadergif {
+    0% {
+        opacity: 1;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+    100%{
+      opacity: 0;
+    }
+  } 
+
+
+  .loader-page .inner{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 400px;
+    height: 204px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: showinner 1s ease-in-out forwards;
+    animation-delay: 3s;
+  }
+
+  @keyframes showinner {
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+  } 
+
+  .loader-page .inner > img{
+    width: 150px;
+    position: relative;
+    z-index: 2;
+    margin-left: -30px;
+    animation: moveastronaut 1.3s ease-in-out forwards;
+    animation-delay: 4s;
+  }
+
   @keyframes moveastronaut {
     0% {
         margin-left: -30px;
@@ -451,8 +471,27 @@ body .cursor {
     }
   } 
 
+  .loader-page .loader-logo-wrap{
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    animation: showlogo 1.3s ease-in-out forwards;
+    animation-delay: 4s;
+  }
+
   .loader-page .loader-logo-wrap img{
-    
+    width: 400px;
+    max-width: initial;
+  }
+
+  @keyframes showlogo {
+    0% {
+        width: 0;
+    }
+
+    100%{
+      width: 400px;
+    }
   }
 
   .scroll-up{
@@ -796,7 +835,7 @@ header .menu .info-wrap a{
 .banner .inner .img-wrap img {
     text-align: center;
     transform-style: preserve-3d;
-    animation: showimg 1.5s ease-in-out 1.8s forwards; 
+    animation: showimg 1.5s ease-in-out 5.6s forwards; 
     max-height: 100%;
     position: absolute;
     top: 8%;
