@@ -2086,9 +2086,12 @@ header .menu .info-wrap a{
 .tab-main-box{
     margin-top: -4px;
 }
-
-.tab-box:nth-child(odd){
+.tab-box{
+    display: none;
     background: #F8F8F8;
+}
+.tab-box:nth-child(odd){
+    
 }
 
 .tab-content{
@@ -2098,6 +2101,7 @@ header .menu .info-wrap a{
 .tab-content .container{
     display: flex;
     align-items: center;
+    min-height: calc(100vh - 236px);
 }
 
 .tab-content .content{
@@ -2139,13 +2143,14 @@ header .menu .info-wrap a{
 }
 
 .tab-content .logos a{
-    background: #D3D0D0;
+    background: #fff;
     border-radius: 10px;
     height: 45px;
     width: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 3px 17px rgba(0,0,0,0.1);
 }
 
 .tab-content .logos a img{
