@@ -467,7 +467,7 @@ body .cursor {
     }
 
     100%{
-      margin-left: 390px;
+      margin-left: 395px;
     }
   } 
 
@@ -477,6 +477,21 @@ body .cursor {
     width: 0;
     animation: showlogo 1.3s ease-in-out forwards;
     animation-delay: 4s;
+  }
+
+  .loader-page .loader-logo-wrap .heading-wrap{
+    overflow: hidden;
+    width: 0;
+    animation: showlogo 1.3s ease-in-out forwards;
+    animation-delay: 4s;
+  }
+
+  .loader-page .loader-logo-wrap h2{
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 5px;
+    width: 400px;
   }
 
   .loader-page .loader-logo-wrap img{
