@@ -4523,6 +4523,14 @@ footer a:hover i{
 }
 
 @media screen and (max-width:1023px){
+    html.menu-open header{
+        padding-right: 0;
+    }
+
+    .menu-open header .menu .menu-logo {
+        margin-left: 0;
+    }
+
     header .menu:before{
         display: none;
     }

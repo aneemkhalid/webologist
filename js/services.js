@@ -33,7 +33,7 @@ $(document).ready(function($) {
       $(".tab-box").hide(); // Hide all tabs
 
       // Show the corresponding tab content
-      $("#"+target).fadeIn('slow');
+      $("#"+target).fadeIn(1000);
       return false;
   });
 
