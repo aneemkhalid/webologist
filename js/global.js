@@ -298,7 +298,7 @@ $(document).ready(function($) {
 
     $('.click-to-scroll').on('click', function () {
       const currentSection = $('.banner');
-      const nextSection = currentSection.next('.banner + section');
+      const nextSection = currentSection.next('.banner + section, .banner + div');
       
       if (nextSection.length) {
         // Scroll to the next section
