@@ -2085,13 +2085,11 @@ header .menu .info-wrap a{
 
 .tab-main-box{
     margin-top: -4px;
-}
-.tab-box{
-    display: none;
     background: #F8F8F8;
 }
-.tab-box:nth-child(odd){
-    
+
+.tab-box{
+    display: none;
 }
 
 .tab-content{
